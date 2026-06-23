@@ -1,8 +1,10 @@
 # ecommerce-search-engine
-A search engine for ecommerce data. It uses the OpenAI API and the [Home Depot dataset](https://www.kaggle.com/datasets/thedevastator/the-home-depot-products-dataset).
+This repository contains a search engine for ecommerce data. It implements keyword, semantic and hybrid search. For storing the data as vectors, it uses Weaviate (via Docker). It can use any LLM of your choice.
+
+As an example this project uses the [Home Depot dataset](https://www.kaggle.com/datasets/thedevastator/the-home-depot-products-dataset).
 
 ## Run the project
-Before running the application locally, make sure you have Python 3.9+ installed.
+Before running the application locally, make sure you have Python 3.12+ installed.
 
 To run the application, follow these steps:
 
@@ -28,8 +30,21 @@ To run the application, follow these steps:
 
    ```
    python -m pip install -r requirements.txt
+   ```
 
-1. Run the application: 
+1. Add OpenAI key to .env file
+
+1. Run the docker container, add key to docker-compose.yml
+
+1. Run the etl process to load the data into the vector database:
+
+   ```
+   cd ecommerce-search-engine
+   python etl.py
+   ```
+
+
+2. Run the application: 
 
    ```
    streamlit run main.py

@@ -24,31 +24,26 @@ def get_similar_products(client, max_num_products):
     print(result['data']['Get']['Products'])
     print("Number of results: ", len(result['data']['Get']['Products']))
     
-async function get_keyword_results(text) {
-    let data = await client.graphql
-        .get()
-        .withClassName('Movies')
-        .withBm25({query: text,
-            properties: ['title^3', 'director', 'genres', 'actors', 'keywords', 'description', 'plot'],
-    })
-        .withFields(['title', 'poster_link', 'genres', 'year', 'director', 'movie_id'])
-        .withLimit(num_movies)
-        .do()
-        .then(info => {
-            return info
-        })
-        .catch(err => {
-            console.error(err)
-        })
-    return data;
     
-def get_products_by_keyword(client, text):
-    
-    
+def get_products_by_keyword(client, text, max_num_products):
+    result = client.query.get(
+        class_name='Products',
+        properties=['title', 'description', 'brand', 'price']
+    ).with_bm25(
+        query=text,
+        properties=['title', 'description^']
+    ).with_limit(max_num_products) \
+    .with_near_text({'concepts': ['description']}) \
+    .do()
+        
+    print(result['data']['Get']['Products'])
 
 def main():
     client = get_weaviate_client()
-    get_similar_products(client, 10)
+    text = 'duvet set'
+    max_num_products = 10
+    get_products_by_keyword(client, text, max_num_products)
+    #get_similar_products(client, max_num_products)
 
 if __name__ == "__main__":
     load_dotenv()  
