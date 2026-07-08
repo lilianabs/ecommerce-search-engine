@@ -1,11 +1,16 @@
 # ecommerce-search-engine
-This repository contains a search engine for ecommerce data. It implements keyword, semantic and hybrid search. For storing the data as vectors, it uses Weaviate (via Docker). It can use any LLM of your choice.
+This repository (mono repo) contains a search engine for ecommerce data. It implements keyword, semantic and hybrid search. For storing the data as vectors, it uses Weaviate (via Docker). It can use any LLM of your choice.
+
+## Modules
+This repository serves as a mono repo and contains the following subprojects:
+
+-
 
 ## Data
 As an example, this project uses the [Home Depot dataset](https://www.kaggle.com/datasets/thedevastator/the-home-depot-products-dataset).
 
 ## Run the project
-Before running the application locally, make sure you have Python 3.12+ installed.
+Before running the application locally, make sure you have Python 3.13+ installed.
 
 To run the application, follow these steps:
 
@@ -49,4 +54,15 @@ To run the application, follow these steps:
 
    ```
    streamlit run main.py
+   ```
+
+### Using the venv in Vscode
+
+Create file `.vscode/settings.json` with the following:
+
+   ```
+  {
+  "python.defaultInterpreterPath": "${workspaceFolder}/.venv/bin/python",
+  "python.terminal.activateEnvironment": true
+  }
    ```
