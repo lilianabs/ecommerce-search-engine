@@ -1,15 +1,17 @@
 # ecommerce-search-engine
 This repository (mono repo) contains a search engine for ecommerce data. It implements keyword, semantic and hybrid search. For storing the data as vectors, it uses Weaviate (via Docker). It can use any LLM of your choice.
 
-## Modules
-This repository serves as a mono repo and contains the following subprojects:
+## Subprojects
+This repository contains the following subprojects:
 
--
+- **Hybrid search:** Contains a set of modules for searching trhough the e-commerce data. It supports keyword, semantic and hybric search.
+- **Seach engine api:** Contains an API to use the different types of search that the subproject above offers.
+- **Search engine app**: Contains an application that interacts with the Search engine API.
 
 ## Data
 As an example, this project uses the [Home Depot dataset](https://www.kaggle.com/datasets/thedevastator/the-home-depot-products-dataset).
 
-## Run the project
+## Running the project (deprecated)
 Before running the application locally, make sure you have Python 3.13+ installed.
 
 To run the application, follow these steps:
