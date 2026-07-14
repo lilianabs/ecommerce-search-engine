@@ -4,7 +4,7 @@ This repository (mono repo) contains a search engine for ecommerce data. It impl
 ## Subprojects
 This repository contains the following subprojects:
 
-- **Hybrid search:** Contains a set of modules for searching trhough the e-commerce data. It supports keyword, semantic and hybric search.
+- **Hybrid search:** Contains a set of modules for searching trhough the e-commerce data. It supports keyword, semantic and hybrid search.
 - **Seach engine api:** Contains an API to use the different types of search that the subproject above offers.
 - **Search engine app**: Contains an application that interacts with the Search engine API.
 
