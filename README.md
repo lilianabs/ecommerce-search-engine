@@ -58,7 +58,7 @@ To run the application, follow these steps:
    streamlit run main.py
    ```
 
-### Using the venv in Vscode
+### Using the venv in VS CODE
 
 Create file `.vscode/settings.json` with the following:
 
