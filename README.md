@@ -9,7 +9,7 @@ This repository contains the following subprojects:
 - **Search engine app**: Contains an application that interacts with the Search engine API.
 
 ## Data
-As an example, this project uses the [Home Depot dataset](https://www.kaggle.com/datasets/thedevastator/the-home-depot-products-dataset).
+This project uses the [Home Depot dataset](https://www.kaggle.com/datasets/thedevastator/the-home-depot-products-dataset) from Kaggle, which contains 2,551 product records from Home Depot. Each product includes metadata such as title, description, brand, price, SKU, and availability. This dataset serves as the foundation for developing and testing keyword, semantic, and hybrid search capabilities across ecommerce product catalogs.
 
 ## Running the project (deprecated)
 Before running the application locally, make sure you have Python 3.13+ installed.
