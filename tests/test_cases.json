@@ -1,0 +1,86 @@
+[
+  {
+    "keyword": "steel toe work boots",
+    "search_type": "keyword",
+    "expected_results": [
+      "Men's Crazy Horse 9'' Logger Boot - Steel Toe - Black Size 10.5(W)",
+      "Men's MobiLite Waterproof Oil-Resistant 8 in. Work Boot - Steel Toe - Brown - Size - 11(M)",
+      "Men's Titanium Waterproof Work Boots - Steel Toe - Brown Size 8.5(W)",
+      "Men's Floorhand Waterproof Wellington Work Boots - Steel Toe - Brown Size 10.5(M)",
+      "Men's Waterproof Logger Boot - Steel Toe - Chocolate Size 10(W)"
+    ],
+    "notes": "Pure keyword baseline. All exact phrase matches."
+  },
+  {
+    "keyword": "waterproof jacket for cold weather",
+    "search_type": "semantic",
+    "expected_results": [
+      "Men's 3X Large Carbon Heather Cotton/Polyester Rain Defender Paxton Heavyweight Hooded Zip-Front Sweatshirt",
+      "Men's Small Dark Navy Cotton/Nylon FR Full Swing Quick Duck Coat",
+      "Women's X-Large Black 7.2-Volt Lithium-Ion Heated Down Vest with 90% Down Insulation and (1) 5.2 Ah Battery Pack",
+      "Men's Small Dark Navy Modacrylic/Lyocell/Aramid Fleece FR HW Zip Front Sweatshirt"
+    ],
+    "notes": "Semantic-favoring. Dataset uses 'water-repellent' and 'Rain Defender', not 'waterproof'."
+  },
+  {
+    "keyword": "blue paint for bedroom walls",
+    "search_type": "hybrid",
+    "expected_results": [
+      "1 qt. #BL-W3 Blue Bird Day Matte Interior Paint & Primer",
+      "1 gal. #560F-4 Russian Blue Eggshell Enamel Interior Stain -Blocking Paint & Primer",
+      "1 qt. #S430-7 Blue Fir One-Coat Hide Matte Interior Stain-Blocking Paint and Primer",
+      "1 gal. #ICC-99 Alluring Blue Eggshell Interior Paint",
+      "5 gal. #S510-3 Ombre Blue Eggshell Interior Paint",
+      "5 gal. #HDPV19 Blue Stemware Flat Interior Paint and Primer",
+      "1 gal. #580E-3 Sweet Blue Eggshell Enamel Interior Stain-Blocking Paint & Primer",
+      "1 gal. #S450-5 Oarsman Blue Flat Low Odor Interior Paint & Primer",
+      "1 gal. PPG1159-7 Singing The Blues Satin Interior Latex Paint",
+      "1 gal. #HDGB46D Hidden Harbor Blue Eggshell Interior Paint",
+      "1 gal. #PPG1159-3 Heavenly Blue Matte Interior Paint and Primer",
+      "1 qt. #T14-5 Sky Blue Satin Enamel Low Odor Interior Paint & Primer",
+      "1 qt. #580B-5 Cornflower Blue Semi-Gloss Enamel Interior Paint & Primer",
+      "Speedhide Pro EV Zero 1 gal. PPG1236-7 Mediterranean Blue Semi-Gloss Interior Paint",
+      "1 gal. #P510-6 Brilliant Blue Extra Durable Satin Enamel Interior Paint & Primer",
+      "1 qt. #MQ5-57 Traditional Blue Extra Durable Satin Enamel Interior Paint & Primer",
+      "8 oz. #M530-3 Perennial Blue Satin Enamel Interior/Exterior Paint & Primer Color Sample",
+      "8 oz. #HDC-AC-23 Provence Blue One-Coat Hide Eggshell Enamel Stain-Blocking Interior Paint & Primer Sample",
+      "5 gal. #S460-1 Air Blue Hi-Gloss Enamel Interior/Exterior Paint"
+    ],
+    "notes": "Multi-attribute: color + surface type + room context. Keyword finds color, semantic understands bedroom intent."
+  },
+  {
+    "keyword": "bathroom vanity mirror",
+    "search_type": "keyword",
+    "expected_results": [
+      "33 in. W x 33 in. H (L2) Framed Square Deluxe Glass Bathroom Vanity Mirror in Weathered Wood",
+      "Blonde 32 in. W x 55 in. H Framed Rectangular Bathroom Vanity Mirror in Light Brown",
+      "Valencia 22 in. W x 27 in. H Single Framed Wall Mirror in Cream",
+      "31.6 in. W x 18.1 in. D x 32.9 in. H Complete Bathroom Vanity Unit in Anthracite with Mirror",
+      "Gela 60 in. W x 22 in. D x 35 in. H Vanity in Grey with Marble Vanity Top in White with Basin and Mirror",
+      "Venice 60 in. W x 18 in. D Bath Vanity in Navy with Marble Vanity Top in White with White Basin and Mirror",
+      "Daria 48 in. W x 22 in. D Single Vanity in Dark Espresso with Cultured Marble Vanity Top in White with Basin and Mirror",
+      "Caroline 72 in. W Bath Vanity in Espresso with Marble Vanity Top in White with Round Basin and Mirror",
+      "Medium Rectangle Satin White Silver Casual Mirror (31.12 in. H x 41.12 in. W)",
+      "Medium Rectangle Urban Pewter Beveled Glass Modern Mirror (32.5 in. H x 42.5 in. W)",
+      "Medium Rectangle Distressed Brown Beveled Glass Casual Mirror (29.38 in. H x 23.38 in. W)",
+      "Oversized Old Iron Plastic Beveled Glass Full-Length Industrial Farmhouse Mirror (65 in. H X 31 in. W)",
+      "South Beach Collection 26 in. x 21 in. Rectangular Landscape Single Tilt Mirror with Beveled Edge in Polished Brass"
+    ],
+    "notes": "Balanced baseline. All three search types should work similarly."
+  },
+  {
+    "keyword": "something to keep my dog from escaping the yard",
+    "search_type": "semantic",
+    "expected_results": [
+      "4 ft. x 144 ft. Grey Privacy Fence Screen HDPE Mesh Windscreen with Reinforced Grommets for Garden Fence (Custom Size)",
+      "3 ft. x 72 ft. Beige Privacy Fence Screen HDPE Mesh Screen with Reinforced Grommets for Garden Fence (Custom Size)",
+      "4 ft. x 77 ft. Green Privacy Fence Screen HDPE Mesh Windscreen with Reinforced Grommets for Garden Fence (Custom Size)",
+      "8 ft. x 104 ft. Green Privacy Fence Screen HDPE Mesh Netting with Reinforced Grommets for Garden Fence (Custom Size)",
+      "5 ft. x 161 ft. Brown Privacy Fence Screen Mesh Cover Screen with Reinforced Grommets for Garden Fence (Custom Size)",
+      "8 ft. x 46 ft. White Privacy Fence Screen Mesh Cover Screen with Reinforced Grommets for Garden Fence (Custom Size)",
+      "4 ft. x 25 ft. Green Privacy Fence Screen Mesh Fabric Cover Windscreen with Reinforced Grommets for Garden Fence",
+      "8 ft. x 36 ft. Brown Privacy Fence Screen HDPE Mesh Windscreen with Reinforced Grommets for Garden Fence (Custom Size)"
+    ],
+    "notes": "Natural language with zero shared keywords. Semantic required to understand intent (containment -> fence)."
+  }
+]
